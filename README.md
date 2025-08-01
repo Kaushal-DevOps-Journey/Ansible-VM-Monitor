@@ -1,14 +1,18 @@
 # Ansible-VM-Monitor
 📬 VM Health Monitoring &amp; Reporting via Gmail — Ansible-based automation to collect CPU, memory and disk from remote Linux VMs and send formatted health reports via Gmail SMTP to one or more recipients. Lightweight, secure, and easy to extend.
 
-🔹 Step 1: Update the System
+
+
+
+
+🔹 Step 1: Update the System:
 sudo apt update && sudo apt upgrade -y
 
-🔹 Step 2: Add the Ansible PPA
+🔹 Step 2: Add the Ansible PPA:
 Ansible provides an official maintained PPA (for latest versions):
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 
-🔹 Step 3: Install Ansible
+🔹 Step 3: Install Ansible:
 sudo apt install ansible -y
 
 
@@ -20,7 +24,8 @@ sudo ./aws/install
 aws configure
 
 
-Tagging Script:
+# Tagging Script:
+
 #!/bin/bash
 
 # Fetch instance IDs that match Environment=dev and Role=web
@@ -79,9 +84,6 @@ source ansible-env/bin/activate
 # Step 4: Install required Python packages  --To be installed in created virtual enviornment
 pip install boto3 botocore docker
 
-ansible-galaxy collection install amazon.aws
-
-ansible-inventory -i inventory/aws_ec2.yaml --graph
 
 Create a Ansible-Project.pem file in the master and paste the details from the Local to that file and save
 sudo chmod 400 Ansible-Project.pem   Provide only read  access  that too only owner
@@ -110,6 +112,6 @@ done
 
 
 Create the Project & Run below Command to execute
-Project Repo: https://github.com/jaiswaladi246/Ansible-VM-Monitor.git
+Project Repo: https://github.com/Kaushal-DevOps-Journey/Ansible-VM-Monitor.git
 
 ansible-playbook playbook.yaml 
