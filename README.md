@@ -1,10 +1,7 @@
 # Ansible-VM-Monitor
 📬 VM Health Monitoring &amp; Reporting via Gmail — Ansible-based automation to collect CPU, memory and disk from remote Linux VMs and send formatted health reports via Gmail SMTP to one or more recipients. Lightweight, secure, and easy to extend.
 
-
-
-
-
+```bash
 🔹 Step 1: Update the System:
 sudo apt update && sudo apt upgrade -y
 
@@ -14,7 +11,7 @@ sudo add-apt-repository --yes --update ppa:ansible/ansible
 
 🔹 Step 3: Install Ansible:
 sudo apt install ansible -y
-
+```
 
 # Install AWS CLI
 ```bash
