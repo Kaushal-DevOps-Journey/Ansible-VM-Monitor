@@ -72,8 +72,8 @@ keyed_groups:
     prefix: env                               
 ```
 
-Create a Separate Virtual Enviornment for Ansible
-
+## Create a Separate Virtual Enviornment for Ansible
+```bash
 # Step 1: Install venv module if not already present
 sudo apt install python3-venv -y
 
@@ -85,6 +85,8 @@ source ansible-env/bin/activate
 
 # Step 4: Install required Python packages  --To be installed in created virtual enviornment
 pip install boto3 botocore docker
+
+```
 
 
 Create a Ansible-Project.pem file in the master and paste the details from the Local to that file and save
