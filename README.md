@@ -55,8 +55,8 @@ ssh-keygen -t rsa -b 4096 -C "Ansible-Master"
 
 /home/ubuntu/.ssh/id_rsa.pub  ---Public key location
 
-Dynamic Inventory
-inventory/aws_ec2.yaml 
+## Dynamic Inventory path --inventory/aws_ec2.yaml 
+```bash
 plugin: amazon.aws.aws_ec2
 regions:
   - us-east-1
@@ -70,7 +70,7 @@ keyed_groups:
     prefix: name
   - key: tags.Environment
     prefix: env                               
-
+```
 
 Create a Separate Virtual Enviornment for Ansible
 
