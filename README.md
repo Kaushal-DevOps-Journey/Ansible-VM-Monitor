@@ -89,8 +89,10 @@ pip install boto3 botocore docker
 ```
 
 
-Create a Ansible-Project.pem file in the master and paste the details from the Local to that file and save
+## Create a Ansible-Project.pem file in the master and paste the details from the Local to that file and save
+```bash
 sudo chmod 400 Ansible-Project.pem   Provide only read  access  that too only owner
+```
 
 ## Copy Pub Key
 ```bash
