@@ -115,7 +115,9 @@ done
 ```
 
 Create the Project & Run below Command to execute
+```bash
 ansible-playbook playbook.yaml
+```
 
 Project Repo: https://github.com/Kaushal-DevOps-Journey/Ansible-VM-Monitor.git
 
