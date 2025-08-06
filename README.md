@@ -27,7 +27,7 @@ aws configure
 
 
 # Tagging Script:
-
+```bash
 #!/bin/bash
 
 # Fetch instance IDs that match Environment=dev and Role=web
@@ -48,7 +48,7 @@ for id in "${sorted_ids[@]}"; do
     --tags Key=Name,Value="$name"
   ((counter++))
 done
-
+```
 
 # Generate Public Private key pair in Ansible Master:
 ssh-keygen -t rsa -b 4096 -C "Ansible-Master"
@@ -90,7 +90,8 @@ pip install boto3 botocore docker
 Create a Ansible-Project.pem file in the master and paste the details from the Local to that file and save
 sudo chmod 400 Ansible-Project.pem   Provide only read  access  that too only owner
 
-Copy Pub Key
+## Copy Pub Key
+```bash
 #!/bin/bash
 
 # Define vars
@@ -111,7 +112,7 @@ for HOST in $HOSTS; do
     chmod 600 ~/.ssh/authorized_keys
   "
 done
-
+```
 
 Create the Project & Run below Command to execute
 Project Repo: https://github.com/Kaushal-DevOps-Journey/Ansible-VM-Monitor.git
